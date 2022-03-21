@@ -5,4 +5,5 @@ Console.WriteLine("Zadej druhé číslo: ");
 int cislo2 = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
 
-Console.WriteLine($"{Math.Max(cislo1, cislo2)}, {Math.Min(cislo1, cislo2)}");
+if (cislo1 == cislo2) Console.WriteLine("Čísla jsou shodá");
+else Console.WriteLine($"{Math.Max(cislo1, cislo2)} je větší než {Math.Min(cislo1, cislo2)}");
